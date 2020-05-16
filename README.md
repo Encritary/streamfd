@@ -1,4 +1,5 @@
 # streamfd
+[![Build Status](https://travis-ci.org/Encritary/streamfd.svg?branch=master)](https://travis-ci.org/Encritary/streamfd)
 A simple PHP extension that allows you to get the FD of a stream resource.
 
 # Building
