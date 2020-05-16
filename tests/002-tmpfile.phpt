@@ -6,6 +6,6 @@ Check if streamfd() works for tmpfile()
 --FILE--
 <?php
 $file = tmpfile();
-var_dump(streamfd($file));
+var_dump(is_int(streamfd($file)));
 --EXPECT--
-int(3)
+bool(true)
