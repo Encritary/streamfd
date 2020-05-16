@@ -18,4 +18,4 @@ The extension adds only one new PHP function:
 
 ``streamfd(resource $stream) : int|bool``
 
-It will return the File Descriptor of the given stream resource, or ``false`` if an error occurs.
+It will return the file descriptor (a positive integer) of the given stream resource, or ``false`` if an error occurs.
