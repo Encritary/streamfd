@@ -1,0 +1,20 @@
+language: php
+compiler:
+  - gcc
+
+php:
+  - 7.2
+  - 7.3
+  - 7.4
+
+env:
+  global:
+    - REPORT_EXIT_STATUS=1
+    - TEST_PHP_ARGS="--show-diff"
+
+script:
+  - cd $TRAVIS_BUILD_DIR
+  - phpize
+  - ./configure
+  - make
+  - make test
