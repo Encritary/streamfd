@@ -2,6 +2,7 @@
 # define PHP_STREAMFD_H
 
 extern zend_module_entry streamfd_module_entry;
+# define phpext_streamfd_ptr &streamfd_module_entry
 
 # define PHP_STREAMFD_VERSION "0.1.0"
 
