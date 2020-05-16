@@ -16,6 +16,6 @@ make && make test && sudo make install
 
 The extension adds only one new PHP function:
 
-``streamfd(resource $stream) : int``
+``streamfd(resource $stream) : int|bool``
 
-It will return a File Descriptor of the given stream resource.
+It will return the File Descriptor of the given stream resource, or ``false`` if an error occurs.
